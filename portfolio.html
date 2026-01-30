@@ -31,20 +31,29 @@
       </div>
 
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>FinCore Demo</strong> — A fintech landing page demonstrating frontend/design and responsive UI. <a href="index.html">View site</a>
-        </li>
-        <li>
-          <strong>Portfolio App</strong> — Personal site that showcases projects, skills, and contact information.
-        </li>
-        <li>
-          <strong>Data Viz Dashboard</strong> — Interactive charts using Python and JavaScript for financial reporting.
-        </li>
-      </ul>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem">
+        <article class="plan">
+          <h3>FinCore Demo</h3>
+          <p>핀테크 랜딩 페이지 — 반응형 디자인, CTA, 비용 플랜 및 문의 폼을 포함합니다.</p>
+          <p class="muted">Tech: HTML, CSS, JS</p>
+          <p><a href="index.html">Live demo</a> · <a href="#">Source</a></p>
+        </article>
+        <article class="plan">
+          <h3>Data Viz Dashboard</h3>
+          <p>재무 리포트용 대시보드—Python(Pandas), D3 기반의 인터랙티브 차트.</p>
+          <p class="muted">Tech: Python, JavaScript, D3</p>
+          <p><a href="#">Demo</a> · <a href="#">Source</a></p>
+        </article>
+        <article class="plan">
+          <h3>Payments API</h3>
+          <p>결제·정산 자동화용 REST API 설계 및 샘플 통합 코드.</p>
+          <p class="muted">Tech: Flask / FastAPI, SQL</p>
+          <p><a href="#">Docs</a> · <a href="#">Source</a></p>
+        </article>
+      </div>
 
       <h2>Skills</h2>
-      <p>Python · Git · HTML · CSS · JavaScript · Data Viz (Matplotlib / D3) · Testing · CI/CD</p>
+      <p>Python · Git · HTML · CSS · JavaScript · D3 · Flask / FastAPI · 테스트 · CI/CD</p>
 
       <h2 id="contact">Contact</h2>
       <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>

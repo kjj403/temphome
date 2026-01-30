@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>김진주 — Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .resume {padding:2rem; background:transparent}
+    .resume .header{display:flex; gap:1rem; align-items:center}
+    .resume h1{margin:0}
+    .section{margin-top:1.4rem}
+    .role{font-weight:700}
+    .meta{color:var(--muted); font-size:.95rem}
+    .project-list, .exp-list{display:grid; gap:.8rem}
+    @media print{
+      .site-header, .main-nav, .btn, .footer-inner{display:none}
+      body{background:#fff}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="images/avatar.svg" alt="김진주" width="36" height="36" style="border-radius:8px;"> <span>김진주</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container resume">
+    <div class="header">
+      <div>
+        <h1>김진주</h1>
+        <p class="meta">Data-focused Frontend Developer — 취업 준비 중 (상반기 목표)</p>
+        <p class="meta">jinjukim0828@gmail.com · <a href="https://github.com/kjj403">github.com/kjj403</a></p>
+      </div>
+      <div style="margin-left:auto; text-align:right">
+        <button class="btn primary" onclick="window.print()">이력서로 저장(PDF)</button>
+        <a class="btn ghost" href="portfolio.html">포트폴리오 보기</a>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p>데이터 분석과 프론트엔드 개발을 결합해 실무에 바로 투입 가능한 제품을 만듭니다. Python/SQL 기반 데이터 파이프라인과 D3/React 기반 시각화 경험이 있으며, 사용자 중심 인터페이스 설계에 강점이 있습니다.</p>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="exp-list">
+        <div>
+          <div class="role">데이터 분석 프로젝트 — 프리랜스 / 개인</div>
+          <div class="meta">2024.06 — 2025.01 · Role: Data Analyst & Developer</div>
+          <ul>
+            <li>대용량 소비 데이터 정제, ETL 파이프라인 구축으로 보고서 생성 자동화</li>
+            <li>대시보드 설계(D3) 및 핵심 KPI 시각화로 의사결정 시간 단축</li>
+          </ul>
+        </div>
+        <div>
+          <div class="role">포트폴리오 사이트 개발 — 개인</div>
+          <div class="meta">2025.01 · Role: Frontend Developer</div>
+          <ul>
+            <li>반응형 UI, 접근성(ARIA) 적용, GitHub Pages로 배포</li>
+            <li>프로젝트 케이스 스터디로 채용담당자에게 전달</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Projects (Selected)</h2>
+      <div class="project-list">
+        <div>
+          <strong>Portfolio Site</strong>
+          <p class="meta">HTML · CSS · JavaScript — Live: portfolio.html · Source: github.com/kjj403/portfolio-site</p>
+        </div>
+        <div>
+          <strong>Data Visualization Project</strong>
+          <p class="meta">Python · Pandas · D3 — 자동화된 리포트와 인터랙티브 시각화</p>
+        </div>
+        <div>
+          <strong>ETL & Reporting Tools</strong>
+          <p class="meta">Python · SQL · Flask — 신뢰성 있는 데이터 파이프라인 및 리포트 자동화</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills & Tools</h2>
+      <p>Python, Pandas, SQL, HTML, CSS, JavaScript, D3, React(기초), Git, Docker, CI/CD, 테스트</p>
+    </section>
+
+    <section class="section">
+      <h2>Notes — Deployment & Tooling</h2>
+      <p>현재는 HTML/CSS/JS로 자체 포트폴리오를 제작했고, 필요 시 Jekyll(Hugo/Next/Astro 고려)을 사용해 블로그/MD 관리, 자동 빌드 등을 도입할 수 있습니다.</p>
+      <ul>
+        <li>Jekyll: GitHub-native, Markdown, 블로그 기능</li>
+        <li>Hugo / Next / Astro: 확장성 및 컴포넌트 기반 개발</li>
+        <li>다음 단계: 프로젝트 추가, 링크 공유, 피어 리뷰 및 이력서 지속 업데이트</li>
+      </ul>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>jinjukim0828@gmail.com · <a href="https://github.com/kjj403">github.com/kjj403</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 김진주</p>
+    </div>
+  </footer>
+
+</body>
+</html>
